@@ -1,6 +1,7 @@
 :root {
   --accent-text-color: #2196f3;
-  --main-button-color: #2196f3;
+  --accent-button-bg-color: #2196f3;
+  --accent-button-text-color: #ffffff;
 }
 
 body {
@@ -22,7 +23,7 @@ button {
 .header {
 }
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -71,6 +72,8 @@ button {
 }
 
 .hero-btn {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -80,7 +83,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
 
-  background-color: var(--main-button-color);
+  background-color: #2196f3;
   color: #ffffff;
 }
 .hero-btn:hover,
@@ -144,6 +147,44 @@ button {
   line-height: 1.18;
 
   text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/* Фильтры-кнопки */
+.filters-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--accent-button-bg-color);
+  color: var(--accent-button-text-color);
+}
+
+/* Примеры работ */
+.samples-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.samples-type {
+  font-size: 16px;
+  line-height: 1.88;
+
   letter-spacing: 0.03em;
 
   color: #757575;
