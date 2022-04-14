@@ -15,31 +15,35 @@
 <body>
 <!-- Шапка -->
     <header class="header">
-        <a class="logo" href="/index.html">Web<span class="header-color logo">Studio</span></a>
-
-    <nav class="navigation">
-        <ul class="navigation-list">
-            <li><a class="navigation-link current" href="/index.html">Студия</a></li>
-            <li><a class="navigation-link" href="/portfolio.html">Портфолио</a></li>
-            <li><a class="navigation-link" href="">Контакты</a></li>
-        </ul>
-    </nav>
-
-        <ul class="contacts">
-            <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
-            <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+   <div class="container header-container">
+            <a class="logo" href="/index.html">Web<span class="header-color logo">Studio</span></a>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list item"><a class="navigation-link current" href="/index.html">Студия</a></li>
+                    <li class="navigation-list item"><a class="navigation-link" href="/portfolio.html">Портфолио</a></li>
+                    <li class="navigation-list item"><a class="navigation-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <ul class="contacts">
+                <li><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+   </div>
     </header>
 
 <!-- Герой -->
 <main>
 <section class="hero">
+    <div class="container">
     <h1 class="hero-name">Эффективные решения для вашего бизнеса</h1>
     <button class="hero-btn text" type="button">Заказать услугу</button>
+    </div>
 </section>
 
 <!-- Наши преимущества -->
 <section class="features">
+    <div class="container">
     <h2 class="fetures-title">Наши преимущества</h2>
         <ul class="features-list">
             <li class="features-item">
@@ -59,20 +63,24 @@
                 <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+    </div>
 </section>
 
 <!-- Чем мы занимаемся -->
 <section>
+    <div class="container">
     <h2 class="works">Чем мы занимаемся</h2>
         <ul class="works-list">
             <li class="works-item"><img src="./images/features/box1.jpg" alt="пример 1" width="370"></li>
             <li class="works-item"><img src="./images/features/box2.jpg" alt="пример 2" width="370"></li>
             <li class="works-item"><img src="./images/features/box3.jpg" alt="пример 3" width="370"></li>
         </ul>
+    </div>
 </section>
 
 <!-- Наша команда -->
 <section class="team">
+    <div class="container">
     <h2 class="team-name">Наша команда</h2>
     <ul class="team-list">
         <li class="team-item">
@@ -96,11 +104,13 @@
             <p class="team-position">UI Designer</p>
         </li>
     </ul>
+    </div>
 </section>
 </main>
 
 <!-- Футер -->
 <footer class="footer">
+<div class="container">
 <a class="logo" href="/index.html">Web<span class="footer-color logo">Studio</span></a>
 
 <address class="address">
@@ -110,6 +120,7 @@
         <li><a class="address-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
 </address>
+</div>
 </footer>
 
 
