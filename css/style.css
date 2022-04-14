@@ -6,13 +6,35 @@
   --secondary-text-color: #757575;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
-  background: #ffffff;
+  background-color: #ffffff;
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 a {
@@ -25,6 +47,9 @@ button {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -58,6 +83,10 @@ button {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+.navigation-link.current {
+  color: var(--accent-text-color);
+}
+
 .navigation-link:hover,
 .navigation-link:focus,
 .contacts-link:hover,
@@ -74,36 +103,63 @@ button {
 }
 
 /* Hero */
+.hero {
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+  background-color: #2f303a;
+}
 .hero-name {
+  max-width: 696px;
+  margin: 0 auto;
+  padding-top: 200px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: grey;
+
+  color: #ffffff;
 }
 
 .hero-btn {
+  display: inline;
+  /* margin: 0 auto; */
+  min-width: 200px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+}
+.hero-btn.text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
+  padding: 10px 32px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
-  background-color: #2196f3;
   color: #ffffff;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
 }
 
 /* Наши преимущества */
+.fetures-title {
+  text-align: center;
+}
+.features-list {
+  display: flex;
+}
 .features-name {
   font-weight: 700;
   font-size: 14px;
@@ -127,14 +183,26 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.works-list {
+  display: flex;
+  justify-content: center;
+}
 
 /* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
 .team-name {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
 }
 
 .team-person {
@@ -157,6 +225,10 @@ button {
 }
 
 /* Фильтры-кнопки */
+.sample-list {
+  display: flex;
+  justify-content: center;
+}
 .filters-btn {
   font-family: "Roboto";
   font-style: normal;
@@ -178,6 +250,10 @@ button {
 }
 
 /* Примеры работ */
+.samples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .samples-title {
   font-weight: 700;
   font-size: 18px;
@@ -196,6 +272,9 @@ button {
 }
 
 /* Футер */
+.footer {
+  background-color: #2f303a;
+}
 .address-item.map {
   font-size: 14px;
   line-height: 1.71;
