@@ -62,14 +62,18 @@ img {
   padding-bottom: 94px;
 }
 
+.title {
+  text-align: center;
+}
+
 /* Header */
 .header {
 }
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -82,10 +86,10 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.header-color {
+.logo-color.header {
   color: #000000;
 }
-.footer-color {
+.logo-color.footer {
   color: #ffffff;
 }
 
@@ -280,6 +284,7 @@ img {
 .sample-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filters-btn {
   font-family: "Roboto";
@@ -289,7 +294,6 @@ img {
   line-height: 1.62;
 
   padding: 6px 22px;
-
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
@@ -298,6 +302,10 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+.filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filters-btn:hover,
@@ -337,15 +345,17 @@ img {
 .footer {
   background-color: #2f303a;
 }
-
 .logo.footer {
   display: inline-block;
-  padding-top: 60px;
-  margin-bottom: 20px;
   margin-right: 0;
+  margin-bottom: 20px;
 }
-.address-list {
+
+.container.footer {
+  display: inline-block;
+  padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 0;
 }
 
 .address-link.map {
